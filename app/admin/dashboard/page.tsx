@@ -62,6 +62,9 @@ export default function AdminDashboardPage() {
     return <Spinner fullScreen text="Loading dashboard..." />;
   }
 
+
+
+  
   const categoryData = categoryStats
     ? Object.entries(categoryStats).map(([name, count]) => ({ name, value: count }))
     : [];
