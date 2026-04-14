@@ -49,7 +49,7 @@ export default function ClassroomFinderPage() {
     }
   };
 
-  
+
   if (loading) {
     return <Spinner fullScreen text="Loading classrooms..." />;
   }
@@ -57,6 +57,7 @@ export default function ClassroomFinderPage() {
   const filteredClassrooms = selectedBlock
     ? classrooms.filter((c) => c.block_id === selectedBlock)
     : classrooms;
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
@@ -96,6 +97,7 @@ export default function ClassroomFinderPage() {
             />
           </div>
         )}
+
 
         <div className="grid gap-8 md:grid-cols-4">
           {/* Sidebar - Blocks */}
