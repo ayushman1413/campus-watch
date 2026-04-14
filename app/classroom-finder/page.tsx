@@ -30,6 +30,7 @@ export default function ClassroomFinderPage() {
     searchClassrooms,
   } = useClassroomStore();
 
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBlock, setSelectedBlock] = useState<string | null>(null);
 
@@ -48,6 +49,7 @@ export default function ClassroomFinderPage() {
     }
   };
 
+  
   if (loading) {
     return <Spinner fullScreen text="Loading classrooms..." />;
   }
